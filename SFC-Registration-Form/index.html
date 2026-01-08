@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFC Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="FormIcon.png">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+    <div class="loader-content">
+        <img src="logo.png" alt="SFC Logo">
+        <p>Stay Strong 💪</p>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="form-navbar">
+    <div class="nav-left">
+        <img src="logo.png" alt="SFC Logo">
+    </div>
+
+    <div class="nav-center">
+        <h2>SFC’s Registration Form</h2>
+    </div>
+
+    <div class="nav-right">
+        <a href="../SFC-Gym/index.html">Home</a>
+    </div>
+</header>
+
+<!-- FORM -->
+<div class="form-container">
+    <form id="registrationForm">
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" min="18" max="40" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <select id="gender" required>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Weight (kg)</label>
+                <input type="number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Height (cm)</label>
+                <input type="number" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Fitness Goal</label>
+            <select id="goal" required>
+                <option>Weight Loss</option>
+                <option>Muscle Gain</option>
+                <option>General Fitness</option>
+            </select>
+        </div>
+
+        <button type="submit">Register Now</button>
+    </form>
+</div>
+
+<!-- MEMBER CARD -->
+<div class="member-card" id="memberCard">
+    <div class="card-header">
+        <img src="logo.png" alt="SFC Logo">
+        <h3>Sakthi Fitness Club</h3>
+    </div>
+
+    <div class="card-body">
+        <p><span>Name:</span> <strong id="cardName"></strong></p>
+        <p><span>Phone:</span> <strong id="cardPhone"></strong></p>
+        <p><span>Gender:</span> <strong id="cardGender"></strong></p>
+        <p><span>Goal:</span> <strong id="cardGoal"></strong></p>
+        <p class="status">Membership: <strong>ACTIVE</strong></p>
+    </div>
+
+    <div class="card-footer">
+        Train Hard • Stay Strong
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
