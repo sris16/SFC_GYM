@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Hide loader after 1.5s
+   // Loader
+window.addEventListener("load", () => {
     setTimeout(() => {
-        document.getElementById("loader").style.display = "none";
+        document.getElementById("loader").classList.add("hidden");
     }, 1500);
+});
+
 
     const form = document.getElementById("registrationForm");
     const card = document.getElementById("memberCard");

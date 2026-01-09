@@ -1,14 +1,11 @@
 console.log("🟢 script.js LOADED successfully!");
 
 
-// Hide loader after page load
+// Loader
 window.addEventListener("load", () => {
     setTimeout(() => {
-        const loader = document.getElementById("loader");
-        if (loader) {
-            loader.classList.add("hide-loader");
-        }
-    }, 1200);
+        document.getElementById("loader").classList.add("hidden");
+    }, 1500);
 });
 
 // Generic helper to attach click → redirect
